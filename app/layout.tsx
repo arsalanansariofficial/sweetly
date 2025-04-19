@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Playfair_Display } from 'next/font/google';
 
+import Header from '@/components/header';
 import { ThemeProvider } from '@/components/theme-provider';
 
 import '@/app/globals.css';
@@ -25,6 +26,7 @@ export default function RootLayout(props: Props) {
         className={`${inter.variable} ${playfair.variable} flex min-h-screen flex-col font-sans antialiased`}
       >
         <ThemeProvider enableSystem attribute="class" defaultTheme="system">
+          <Header />
           {props.children}
         </ThemeProvider>
       </body>
