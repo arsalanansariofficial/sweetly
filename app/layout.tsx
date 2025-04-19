@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter, Playfair_Display } from 'next/font/google';
 
+import { ThemeProvider } from '@/components/theme-provider';
+
 import '@/app/globals.css';
 
 type Props = Readonly<{ children: React.ReactNode }>;
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout(props: Props) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${playfair.variable} flex min-h-screen flex-col font-sans antialiased`}
       >
-        {props.children}
+        <ThemeProvider enableSystem attribute="class" defaultTheme="system">
+          {props.children}
+        </ThemeProvider>
       </body>
     </html>
   );
