@@ -87,12 +87,17 @@ export default function Page() {
               Apply
             </Button>
           </form>
-          <Button className="w-full">Add New</Button>
+          <Button className="w-full" asChild>
+            <Link href="/recipes/add">Add New</Link>
+          </Button>
         </aside>
-        <div className="flex items-center justify-between gap-4 md:hidden">
+        <div className="flex items-center justify-between gap-2 md:hidden">
           <Input type="text" placeholder="Search..." className="" />
           <Button variant="outline" className="cursor-pointer">
             Filter
+          </Button>
+          <Button asChild>
+            <Link href="/recipes/add">Add New</Link>
           </Button>
         </div>
         <ul className="gap-4 space-y-4 md:grid md:grid-cols-[repeat(auto-fill,minmax(15rem,1fr))] md:space-y-0">

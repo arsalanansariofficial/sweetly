@@ -40,8 +40,7 @@ export const buttonVariants = cva(
   }
 );
 
-export function Button(props: Props) {
-  const { asChild = false } = props;
+export function Button({ asChild = false, ...props }: Props) {
   const Comp = asChild ? Slot : 'button';
 
   return (
