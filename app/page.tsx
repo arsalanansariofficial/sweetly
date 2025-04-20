@@ -8,7 +8,7 @@ export default async function Page() {
   const isActive = 0;
 
   const result = await fetch(
-    'https://raw.githubusercontent.com/arsalanansariofficial/resources/refs/heads/main/markdowns/posts/about-me.md'
+    'https://raw.githubusercontent.com/arsalanansariofficial/resources/refs/heads/main/markdowns/recipes/featured.md'
   );
 
   return (
