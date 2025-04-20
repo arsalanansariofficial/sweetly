@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, Playfair_Display } from 'next/font/google';
 
 import Header from '@/components/header';
+import Footer from '@/components/footer';
 import { ThemeProvider } from '@/components/theme-provider';
 
 import '@/app/globals.css';
@@ -28,6 +29,7 @@ export default function RootLayout(props: Props) {
         <ThemeProvider enableSystem attribute="class" defaultTheme="system">
           <Header />
           {props.children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
