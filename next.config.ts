@@ -1,5 +1,16 @@
 import type { NextConfig } from 'next';
 
 export default {
-  devIndicators: false
+  output: 'export',
+  devIndicators: false,
+  images: {
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+        pathname: '/arsalanansariofficial/**'
+      }
+    ]
+  }
 } as NextConfig;

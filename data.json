@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "slug": "about-me",
+      "title": "About Me",
+      "author": "Arsalan Ansari",
+      "publishedAt": "2025-04-12",
+      "summary": "A formal introduction about me.",
+      "image": "https://raw.githubusercontent.com/arsalanansariofficial/resources/refs/heads/main/images/posts/about-me.jpeg"
+    }
+  ],
+  "recipes": [
+    {
+      "likes": 5,
+      "rating": 5,
+      "duration": 10,
+      "category": "snacks",
+      "slug": "vanilla-cake",
+      "title": "Vanilla Cake",
+      "author": "Katline Snow",
+      "publishedAt": "2025-04-20",
+      "image": "https://raw.githubusercontent.com/arsalanansariofficial/resources/refs/heads/main/images/recipes/vanilla-cake.jpg",
+      "summary": "The concept of cake evolved over time, with ancient civilizations baking simple versions using flour, water, and honey. However, it wasn’t until the 19th century that modern cakes began to take shape, thanks to the invention of baking powder, which allowed cakes to rise without yeast."
+    }
+  ]
+}
