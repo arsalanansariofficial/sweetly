@@ -14,13 +14,13 @@ export default async function Page({ params }: Props) {
     <main className="grow p-4">
       <section className="container mx-auto space-y-4">
         <header className="space-y-8">
-          <div className="relative h-80">
+          <div className="relative min-h-70 sm:min-h-[30rem]">
             <Image
               fill
               priority
               alt="Post Image"
               src="/recipe.jpg"
-              className="aspect-video rounded-lg"
+              className="aspect-video rounded-lg object-cover"
             />
           </div>
         </header>
