@@ -67,6 +67,7 @@ export default function Page() {
           <Image
             fill
             priority
+            sizes="100%"
             suppressHydrationWarning
             alt={recipes[isActive].slug}
             src={recipes[isActive].image}
@@ -115,12 +116,14 @@ export default function Page() {
         <main className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-4 sm:space-y-0">
           <Link
             href="/recipes?category=veg"
-            className="relative min-h-50 overflow-clip rounded-md sm:min-h-70"
+            className="relative block min-h-50 overflow-clip rounded-md sm:min-h-70"
           >
             <Image
               fill
+              priority
+              sizes="100%"
               alt="Vegetables"
-              className="grayscale"
+              className="object-cover grayscale"
               src="https://raw.githubusercontent.com/arsalanansariofficial/resources/refs/heads/main/images/recipes/veg.jpg"
             />
             <h3 className="absolute inset-x-4 bottom-4 min-h-fit font-serif text-2xl font-black text-white/75">
@@ -129,12 +132,14 @@ export default function Page() {
           </Link>
           <Link
             href="/recipes?category=non-veg"
-            className="relative min-h-50 overflow-clip rounded-md sm:min-h-70"
+            className="relative block min-h-50 overflow-clip rounded-md sm:min-h-70"
           >
             <Image
               fill
+              priority
+              sizes="100%"
               alt="Non-vegetables"
-              className="grayscale"
+              className="object-cover grayscale"
               src="https://raw.githubusercontent.com/arsalanansariofficial/resources/refs/heads/main/images/recipes/non-veg.jpg"
             />
             <h3 className="absolute inset-x-4 bottom-4 min-h-fit font-serif text-2xl font-black text-white/75">
@@ -143,13 +148,15 @@ export default function Page() {
           </Link>
           <Link
             href="/recipes?category=snacks"
-            className="relative min-h-50 overflow-clip rounded-md sm:min-h-70"
+            className="relative block min-h-50 overflow-clip rounded-md sm:min-h-70"
           >
             <Image
               fill
-              src="https://raw.githubusercontent.com/arsalanansariofficial/resources/refs/heads/main/images/recipes/snacks.jpg"
+              priority
               alt="Snacks"
-              className="grayscale"
+              sizes="100%"
+              className="object-cover grayscale"
+              src="https://raw.githubusercontent.com/arsalanansariofficial/resources/refs/heads/main/images/recipes/snacks.jpg"
             />
             <h3 className="absolute inset-x-4 bottom-4 min-h-fit font-serif text-2xl font-black text-white/75">
               Snacks
@@ -157,13 +164,15 @@ export default function Page() {
           </Link>
           <Link
             href="/recipes?category=beverage"
-            className="relative min-h-50 overflow-clip rounded-md sm:min-h-70"
+            className="relative block min-h-50 overflow-clip rounded-md sm:min-h-70"
           >
             <Image
               fill
+              priority
+              sizes="100%"
               alt="Beverages"
+              className="object-cover grayscale"
               src="https://raw.githubusercontent.com/arsalanansariofficial/resources/refs/heads/main/images/recipes/beverage.jpg"
-              className="grayscale"
             />
             <h3 className="absolute inset-x-4 bottom-4 min-h-fit font-serif text-2xl font-black text-white/75">
               Beverages
