@@ -1,8 +1,5 @@
 import Link from 'next/link';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { Input } from '@/components/ui/input';
 import MenuToggle from '@/components/menu-toggle';
 import ThemeToggle from '@/components/theme-toggle';
 
@@ -25,65 +22,24 @@ export default function Header() {
           <ul className="flex items-center gap-2">
             <li>
               <Link
-                href="/docs"
+                href="/posts"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Docs
+                Posts
               </Link>
             </li>
             <li>
               <Link
-                href="/components"
+                href="/recipes"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Components
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/themes"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                Themes
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/charts"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                Charts
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/colors"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                Colors
+                Recipes
               </Link>
             </li>
           </ul>
         </div>
         <MenuToggle />
-        <div className="flex grow items-center gap-1 md:grow-0">
-          <div className="flex grow items-center gap-4 md:grow-0">
-            <div className="group relative grow md:grow-0">
-              <Input
-                type="text"
-                placeholder="Search..."
-                className="hover:!bg-accent hover:placeholder:text-accent-foreground rounded-lg backdrop-blur-xs placeholder:font-semibold"
-              />
-              <kbd className="bg-muted text-muted-foreground group-hover:text-accent-foreground absolute inset-y-2 right-2 hidden items-center gap-2 rounded border px-1 py-0.5 text-xs md:flex">
-                <span>⌘</span>k
-              </kbd>
-            </div>
-            <span className="min-h-6 min-w-6">
-              <FontAwesomeIcon icon={faGithub} />
-            </span>
-          </div>
-          <ThemeToggle />
-        </div>
+        <ThemeToggle />
       </nav>
     </header>
   );

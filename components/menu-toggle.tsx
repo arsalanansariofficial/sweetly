@@ -27,28 +27,13 @@ export default function MenuToggle() {
         </Drawer.DrawerDescription>
         <ul className="text-muted-foreground space-y-2 p-4 font-sans">
           <li className="hover:text-foreground transition-colors">
-            <Link href="/docs" onClick={() => setOpen(false)}>
-              Docs
+            <Link href="/posts" onClick={() => setOpen(false)}>
+              Posts
             </Link>
           </li>
           <li className="hover:text-foreground transition-colors">
-            <Link href="/components" onClick={() => setOpen(false)}>
-              Components
-            </Link>
-          </li>
-          <li className="hover:text-foreground transition-colors">
-            <Link href="/themes" onClick={() => setOpen(false)}>
-              Themes
-            </Link>
-          </li>
-          <li className="hover:text-foreground transition-colors">
-            <Link href="/charts" onClick={() => setOpen(false)}>
-              Charts
-            </Link>
-          </li>
-          <li className="hover:text-foreground transition-colors">
-            <Link href="/colors" onClick={() => setOpen(false)}>
-              Colors
+            <Link href="/recipes" onClick={() => setOpen(false)}>
+              Recipes
             </Link>
           </li>
         </ul>
